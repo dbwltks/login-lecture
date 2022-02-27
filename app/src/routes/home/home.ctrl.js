@@ -8,7 +8,7 @@ const login = (req, res) => {
   res.render("home/login");
 };
 
-module.exports = {
+module.exports = { // 내보내기
   home,
   login,
 };
