@@ -18,5 +18,7 @@ function login() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(req), //문자열로바꿈  json으로 감쌈
-  });
+  })
+    .then((res) => res.json())
+    .then((res) => {});
 }
