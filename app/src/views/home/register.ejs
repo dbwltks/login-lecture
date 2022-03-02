@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/home/login.css" />
+    <link rel="stylesheet" href="/css/home/register.css" />
     <link rel="stylesheet" href="/css/home/global.css" />
-    <script src="/js/home/login.js" defer></script>
+    <script src="/js/home/register.js" defer></script>
     <script
       src="https://kit.fontawesome.com/48c98e124c.js"
       crossorigin="anonymous"
     ></script>
-    <title>하천네트워크 - 로그인</title>
+    <title>하천네트워크 - 회원가입</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="pages_login">
+      <div class="pages_register">
         <div class="header">
           <nav class="navbar">
-            <a class="logo" href="/pages/home.html"></a>
+            <a class="logo" href="/pages/index.html"></a>
             <ul>
               <!-- <li><a class="logo"></a></li> -->
               <li><a href="/pages/home.html">홈</a></li>
@@ -58,9 +58,9 @@
           </nav>
         </div>
         <div class="main">
-          <div class="login_warp">
+          <div class="register-warp">
             <h1>하천네트워크</h1>
-            <form class="id_pw_wrap">
+            <div class="id_pw_wrap">
               <div class="int-area">
                 <input
                   type="text"
@@ -81,12 +81,52 @@
                 />
                 <label for="pw">비밀번호</label>
               </div>
+              <div class="int-area">
+                <input
+                  type="password"
+                  name="pw"
+                  id="confirm-pw"
+                  autocomplete="off"
+                  maxlength="16"
+                />
+                <label for="pw">비밀번호확인</label>
+              </div>
+              <div class="int-area">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  autocomplete="off"
+                  maxlength="15"
+                />
+                <label for="name">이름</label>
+              </div>
+              <div class="int-area">
+                <input
+                  type="text"
+                  name="date-of-birth"
+                  id="date-of-birth"
+                  autocomplete="off"
+                  maxlength="6"
+                />
+                <label for="date-of-birth">생년월일</label>
+              </div>
+              <div class="int-area">
+                <input
+                  type="text"
+                  name="group"
+                  id="group"
+                  autocomplete="off"
+                  maxlength="15"
+                />
+                <label for="group">회원단체</label>
+              </div>
               <div class="saveid">
                 <input type="checkbox" id="chkSaveID" />
                 <label for="chkSaveID">ID 저장</label>
               </div>
               <div class="btn-area">
-                <button>로그인</button>
+                <button>회원가입</button>
               </div>
               <ul class="loginMenu">
                 <li>
@@ -99,7 +139,7 @@
                   <a href="" class="schPass">비밀번호 찾기</a>
                 </li>
               </ul>
-            </form>
+            </div>
           </div>
         </div>
       </div>

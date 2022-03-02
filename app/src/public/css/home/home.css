@@ -1,0 +1,47 @@
+/* @font-face {
+  font-family: abster;
+  src: url(font/abster-webfont.woff) format('woff');
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://post-phinf.pstatic.net/MjAxOTA1MjhfMTQw/MDAxNTU5MDU1MzUzOTQz.Lvz18du_dAZpP6ZR5JvEO8socYpDWGudlaLQnZpDxcYg.oVRJGvcEmR5Z6tXFa4fiKI4yabBimoKm3sSSrke7fwAg.JPEG/%ED%95%9C%EA%B0%95_%EC%B9%B4%EC%95%BD712641853.jpg?type=w1200);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pages_home .home_text1 {
+  padding: 300px 0 300px 0;
+  margin: 0 30px;
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pages_home .home_text1 h2 {
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+.pages_home .home_text1 p {
+  font-size: 23px;
+}
+
+@media only screen and (max-width: 1355px) {
+  .pages_home .home_text1 {
+    padding: 200px 0 200px;
+    margin: 0 20px;
+  }
+  .pages_home .home_text1 h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .pages_home .home_text1 p {
+    font-size: 13px;
+  }
+}
