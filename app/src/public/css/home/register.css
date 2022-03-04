@@ -18,19 +18,24 @@ body {
 }
 
 .main {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .register-warp {
   box-sizing: border-box;
   width: 500px;
-  margin: 150px auto;
+  margin: 100px auto;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   padding: 50px;
 }
+.register-warp .logo {
+  /* position: relative; */
+  width: 100px;
+  height: 100px;
+}
 .register-warp h1 {
   text-align: center;
-  margin: 50px;
+  margin-bottom: 50px;
   color: #fff;
 }
 
@@ -67,26 +72,33 @@ body {
   color: #166cea;
 }
 
-/* .int-area input:focus + label {
-  top: -2px;
-  font-size: 13px;
+.int-gender-area {
+  margin: 20px;
+  left: 10px;
+  top: 15px;
+}
+.int-gender-area label {
+  margin: 10px;
+  color: #999;
+}
+.int-gender-area input:checked + label {
   color: #166cea;
 }
-.int-area input:valid + label {
-  top: -2px;
-  font-size: 13px;
-  color: #166cea;
-} */
 
-.saveid {
-  margin-top: 10px;
-  color: #fff;
+.group-area {
+  left: 10px;
+  top: 15px;
+  margin: 10px;
 }
-.saveid label,
-.saveid input {
-  font-size: 12px;
-  text-decoration: none;
-  cursor: pointer;
+.group-area label {
+  color: #999;
+  font-size: 14px;
+  margin: 10px;
+}
+.group-area {
+  left: 10px;
+  top: 15px;
+  margin: 10px;
 }
 
 .btn-area {

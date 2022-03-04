@@ -74,6 +74,11 @@ body {
   font-size: 13px;
   color: #166cea;
 }
+.int-area input:valid + label {
+  top: -2px;
+  font-size: 13px;
+  color: #166cea;
+}
 
 .saveid {
   margin-top: 10px;

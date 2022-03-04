@@ -59,7 +59,8 @@
         </div>
         <div class="main">
           <div class="register-warp">
-            <h1>하천네트워크</h1>
+            <!-- <h1>하천네트워크</h1> -->
+            <a href="/pages/home.html" class="logo"></a>
             <div class="id_pw_wrap">
               <div class="int-area">
                 <input
@@ -67,6 +68,7 @@
                   name="id"
                   id="id"
                   autocomplete="off"
+                  required
                   maxlength="41"
                 />
                 <label for="id">아이디</label>
@@ -77,6 +79,7 @@
                   name="pw"
                   id="pw"
                   autocomplete="off"
+                  required
                   maxlength="16"
                 />
                 <label for="pw">비밀번호</label>
@@ -87,9 +90,10 @@
                   name="pw"
                   id="confirm-pw"
                   autocomplete="off"
+                  required
                   maxlength="16"
                 />
-                <label for="pw">비밀번호확인</label>
+                <label for="pw">비밀번호 확인</label>
               </div>
               <div class="int-area">
                 <input
@@ -97,6 +101,7 @@
                   name="name"
                   id="name"
                   autocomplete="off"
+                  required
                   maxlength="15"
                 />
                 <label for="name">이름</label>
@@ -107,38 +112,45 @@
                   name="date-of-birth"
                   id="date-of-birth"
                   autocomplete="off"
+                  required
                   maxlength="6"
                 />
                 <label for="date-of-birth">생년월일</label>
               </div>
-              <div class="int-area">
+              <div class="int-gender-area">
                 <input
-                  type="text"
-                  name="group"
-                  id="group"
-                  autocomplete="off"
-                  maxlength="15"
+                  type="radio"
+                  name="gender"
+                  id="gender"
+                  value="male"
+                  required
                 />
-                <label for="group">회원단체</label>
+                <label for="gender">남성</label>
+              <!-- </div> -->
+              <!-- <div class="int-gender-area"> -->
+                <input
+                  type="radio"
+                  name="gender"
+                  id="gender"
+                  value="female"
+                  required
+                />
+                <label for="gender">여성</label>
               </div>
-              <div class="saveid">
-                <input type="checkbox" id="chkSaveID" />
-                <label for="chkSaveID">ID 저장</label>
+              <div class="group-area">
+                <label>소속단체</label>
+                <select name="group" id="group" size="0">
+                  <option value=""></option>
+                  <option value="중랑천사람들">중랑천사람들</option>
+                  <option value="송파그린시니어봉사단">송파그린시니어봉사단</option>
+                  <option value="세곡천사랑">세곡천사랑</option>
+                  <option value="숲여울기후환경넷">숲여울기후환경넷</option>
+                  <option value="기타">기타</option>
+                </select>
               </div>
               <div class="btn-area">
                 <button>회원가입</button>
               </div>
-              <ul class="loginMenu">
-                <li>
-                  <a href="/pages/join.html" class="join">회원가입</a>
-                </li>
-                <li>
-                  <a href="/schId.html" class="schId">ID 찾기</a>
-                </li>
-                <li>
-                  <a href="" class="schPass">비밀번호 찾기</a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
